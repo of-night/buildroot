@@ -186,7 +186,7 @@ endif
 
 ifeq ($(BR2_TARGET_UBOOT_NEEDS_OPENSBI),y)
 UBOOT_DEPENDENCIES += opensbi
-UBOOT_MAKE_OPTS += OPENSBI=$(BINARIES_DIR)/fw_dynamic.bin
+UBOOT_MAKE_OPTS += OPENSBI=$(BINARIES_DIR)/fw_jump.bin
 endif
 
 # Mainline U-Boot versions can create the i.MX specific boot images

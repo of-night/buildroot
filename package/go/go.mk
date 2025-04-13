@@ -6,6 +6,8 @@
 
 GO_VERSION = 1.19.10
 GO_SITE = https://storage.googleapis.com/golang
+# GO_VERSION = 1.23.3
+# GO_SITE = https://go.dev/dl
 GO_SOURCE = go$(GO_VERSION).src.tar.gz
 
 GO_LICENSE = BSD-3-Clause
@@ -164,3 +166,4 @@ define HOST_GO_INSTALL_CMDS
 endef
 
 $(eval $(host-generic-package))
+
